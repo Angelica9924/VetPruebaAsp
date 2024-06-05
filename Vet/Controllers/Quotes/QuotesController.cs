@@ -47,7 +47,7 @@ namespace Vet.Controllers.Quotes
         }
 
         [HttpGet]
-        [Route("api/citas/{vetId}/vets")]
+        [Route("api/quotes/{vetId}/vets")]
         public async Task<IActionResult> GetByVetId(int vetId)
         {
             var quotes = await _quoteRepository.GetByVetId(vetId);
